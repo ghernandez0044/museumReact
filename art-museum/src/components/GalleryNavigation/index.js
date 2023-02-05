@@ -14,7 +14,7 @@ function GalleryNavigation({ galleries }){
                 <ul>
                 {
                     galleries.map(gallery => (
-                        <NavLink to={`/galleries/${gallery.id}`}>
+                        <NavLink to={`/galleries/${gallery.id}`} activeClassName="active">
                             <li key={gallery.id}>
                             {gallery.name}
                             </li>
